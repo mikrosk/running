@@ -148,7 +148,7 @@ dfpsirOut
 
 		data
 
-fpsBitmap	incbin	"include\fps\fps.rbf"
+fpsBitmap	incbin	"include/fps/fps.rbf"
 
 fpsMode		dc.w	0				; 0 = ausgeschaltet, 1 = sichtbar
 

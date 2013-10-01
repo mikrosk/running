@@ -1,5 +1,5 @@
 
-MAPMAIN			equ	0		; fuer neue modi muss ggf. drawBackgroundIfRequired() in .\gfxrouts\backgrnd.s angepasst werden
+MAPMAIN			equ	0		; fuer neue modi muss ggf. drawBackgroundIfRequired() in ./gfxrouts/backgrnd.s angepasst werden
 MAPOVERLAY		equ	1
 MAPEXTRAOVERLAY		equ	2
 

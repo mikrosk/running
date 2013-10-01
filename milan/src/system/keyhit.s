@@ -13,7 +13,7 @@ keyHit
 
 		bsr	khItems					; itemauswahl und -aktivierung
 
-		bsr	keyHitAudio				; .\src\audio\keyhit
+		bsr	keyHitAudio				; ./src/audio/keyhit
 
 	; screenshot
 
@@ -119,21 +119,21 @@ khNoExpandMap
 		tst.b	(a1,d0.w)
 		beq.s	khNoMapOnOff
 		movem.l	a0-a1,-(sp)
-		bsr	mapOnOff			; src\map\control.s
+		bsr	mapOnOff			; src/map/control.s
 		movem.l	(sp)+,a0-a1
 khNoMapOnOff
 		move.w	KOMAPSWITCH(a0),d0
 		tst.b	(a1,d0.w)
 		beq.s	khNoMapSwitch
 		movem.l	a0-a1,-(sp)
-		bsr	mapSwitch			; src\map\control.s
+		bsr	mapSwitch			; src/map/control.s
 		movem.l	(sp)+,a0-a1
 khNoMapSwitch
 		move.w	KOMAPCONTENTSWITCH(a0),d0
 		tst.b	(a1,d0.w)
 		beq.s	khNoMapContentSwitch
 		movem.l	a0-a1,-(sp)
-		bsr	mapContentSwitch		; src\map\control.s
+		bsr	mapContentSwitch		; src/map/control.s
 		movem.l	(sp)+,a0-a1
 khNoMapContentSwitch
 
@@ -148,7 +148,7 @@ khItems
 		beq.s	khNoItemPrevious
 		movem.l	a0-a1,-(sp)
 		bsr	bringUpAltTab
-		bsr	itemSelectPrevious			; .\src\console\itemctrl.s
+		bsr	itemSelectPrevious			; ./src/console/itemctrl.s
 		movem.l	(sp)+,a0-a1
 khNoItemPrevious
 
@@ -157,7 +157,7 @@ khNoItemPrevious
 		beq.s	khNoItemNext
 		movem.l	a0-a1,-(sp)
 		bsr	bringUpAltTab
-		bsr	itemSelectNext				; .\src\console\itemctrl.s
+		bsr	itemSelectNext				; ./src/console/itemctrl.s
 		movem.l	(sp)+,a0-a1
 khNoItemNext
 
@@ -165,7 +165,7 @@ khNoItemNext
 		tst.b	(a1,d0.w)
 		beq.s	khNoItemActivate
 		movem.l	a0-a1,-(sp)
-		bsr	itemChangeActivationFlag		; .\src\console\itemctrl.s
+		bsr	itemChangeActivationFlag		; ./src/console/itemctrl.s
 		movem.l	(sp)+,a0-a1
 khNoItemActivate
 		rts
@@ -1126,7 +1126,7 @@ screenshot
 		lea	sshot_message1(pc),a0
 		bsr	install_message
 
-	; und nummer um eins erh”hen
+	; und nummer um eins erhï¿½hen
 
 		lea	sshot_number(pc),a0
 		move.w	(a0),d0

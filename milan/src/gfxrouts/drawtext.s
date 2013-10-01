@@ -151,8 +151,8 @@ fontDataRed8x8		dc.w	0
 			dc.w	0
 			dc.w	152
 
-fdred8x8MaskGfx		incbin	"include\fonts\message.rbf"
-fdred8x8ColorGfx	incbin	"include\fonts\f8col20.rbf"
+fdred8x8MaskGfx		incbin	"include/fonts/message.rbf"
+fdred8x8ColorGfx	incbin	"include/fonts/f8col20.rbf"
 fdred8x8GfxOffset	dc.w	-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 			dc.w	-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 			dc.w	-1,656,672,816,688,704,720,-1,752,768,912,896,944,976,960,736

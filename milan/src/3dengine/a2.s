@@ -751,7 +751,7 @@ c3pa2cLoop
 		bsr	c3pa2cCalcYIndArray
 		bsr	c3pa2cCalcXIndArray
 		bsr	c3pa2cCalcParameters
-		bsr	c3pa2cInsertLine		; .\a2insert.s
+		bsr	c3pa2cInsertLine		; ./a2insert.s
 
 c3pa2cSkipLine
 		movem.l	(sp)+,d7/a1-a2

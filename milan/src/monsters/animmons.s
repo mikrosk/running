@@ -16,7 +16,7 @@ animateMonsters
 
 		fmove.w	vblTime1000,fp0			; schrittweite fuer monster berechnen
 		fdiv.w	#2*1000,fp0			; mal 2 -> monster bewegen sich mit halber geschwindigkeit
-		fmul.w	#STEP1000,fp0			; konstante aus [.\src\moveit.s]
+		fmul.w	#STEP1000,fp0			; konstante aus [./src/moveit.s]
 		fmove.w	fp0,monSpeed			; ... und abspeichern
 		
 amLoop
@@ -82,7 +82,7 @@ animateSingleMonsterPosition
 
 asmpNoIntelligent
 
-		bsr	monsterWalkOneStep		; einen schritt in der aktuellen richtung normal weiterlaufen [.\src\monsters\walkstep.s]
+		bsr	monsterWalkOneStep		; einen schritt in der aktuellen richtung normal weiterlaufen [./src/monsters/walkstep.s]
 		bra.s	asmpOut
 
 asmpSetPosition

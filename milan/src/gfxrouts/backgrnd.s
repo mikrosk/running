@@ -36,7 +36,7 @@ drawBackgroundIfRequired
 
 		clr.w	(a3)				; flag wieder loeschen
 
-		movea.l	screenData1Ptr,a0		; .\src\system\video.s
+		movea.l	screenData1Ptr,a0		; ./src/system/video.s
 		movea.l	screenData2Ptr,a1
 		move.w	#1,SCREENDATACLEARFLAG(a0)	; das flag zum loeschen bei beiden
 		move.w	#1,SCREENDATACLEARFLAG(a1)	; screens setzen
@@ -238,7 +238,7 @@ cbylSkip
 		data
 
 
-backgroundGfx	incbin	"include\tpi\back_002.tpi"
+backgroundGfx	incbin	"include/tpi/back_002.tpi"
 
 
 ; standardhintergrund

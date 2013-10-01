@@ -431,18 +431,18 @@ lccTxt		dc.b	"Running Milan Cheat angewendet.",0
 
 
 		IFNE CHEATS1FLAG
-		include	"src\laptop\cheats_1.s"
+		include	"src/laptop/cheats_1.s"
 		ENDC
 
 		IFNE CHEATS2FLAG
-		include	"src\laptop\cheats_2.s"
+		include	"src/laptop/cheats_2.s"
 		ENDC
 
 		IFNE CHEATS3FLAG
-		include	"src\laptop\cheats_3.s"
+		include	"src/laptop/cheats_3.s"
 		ENDC
 
 		IFNE CHEATS4FLAG
-		include	"src\laptop\cheats_4.s"
+		include	"src/laptop/cheats_4.s"
 		ENDC
 

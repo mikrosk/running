@@ -39,7 +39,7 @@ llftLoop
 		move.l	(a0)+,FILEBYTES(a4)
 		move.l	(a5)+,FILEBUFFER(a4)
 		movem.l	a0/a4-a6,-(sp)
-		bsr	loadFile			; .\src\system\fileio.s
+		bsr	loadFile			; ./src/system/fileio.s
 		movem.l	(sp)+,a0/a4-a6
 		bra.s	llftLoop
 llftSkip
@@ -59,7 +59,7 @@ llftLoop
 		move.l	d0,FILEBYTES(a4)
 		move.l	(a5)+,FILEBUFFER(a4)
 		movem.l	a0/a4-a6,-(sp)
-		bsr	loadFile			; .\src\system\fileio.s
+		bsr	loadFile			; ./src/system/fileio.s
 		movem.l	(sp)+,a0/a4-a6
 		bra.s	llftLoop
 llftSkip

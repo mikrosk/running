@@ -17,7 +17,7 @@ installLevel
 
 		bsr	setColortableInit
 
-		bsr	loadLevelFiles			; .\src\install.s
+		bsr	loadLevelFiles			; ./src/install.s
 
 		bsr	ilSetPlayerStart
 		bsr	ilSetWeapons
@@ -29,7 +29,7 @@ installLevel
 		bsr	ilResetGeiger
 		bsr	ilResetAltTab
 
-		bsr	setWeaponStrings		; .\src\things\wpnstrin.s
+		bsr	setWeaponStrings		; ./src/things/wpnstrin.s
 
 		rts
 
@@ -174,7 +174,7 @@ ilResetAltTab
 		mulu.w	#2*(CALTTABDX+CALTTABCELLSPACING),d0
 		move.w	d0,ALTTABMIDOFFSET(a0)
 
-		bsr	hideAltTab				; .\src\console\alttab.s
+		bsr	hideAltTab				; ./src/console/alttab.s
 		rts
 
 

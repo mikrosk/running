@@ -1,5 +1,5 @@
 
-; achtung: die maximalwerte (laptopgroesse, fontgroesse) in .\datastru.s eintragen (abhaengigkeiten beachten)
+; achtung: die maximalwerte (laptopgroesse, fontgroesse) in ./datastru.s eintragen (abhaengigkeiten beachten)
 
 ; struktur laptopFontData
 LFGFXPTR		equ	0			; adresse der grafikdaten
@@ -95,7 +95,7 @@ lcswOut
 
 ; ---------------------------------------------------------
 ; schriftart: tahoma
-lfTahomaGfx	incbin	"include\fonts\tahoma.rbf"
+lfTahomaGfx	incbin	"include/fonts/tahoma.rbf"
 		even
 
 lfTahomaWidth	dc.w	6,6,6,6,6,4,6,6,3,4,6,3,9,6,6,6,6,5,5,4,6,6,9,6,6,5			; kleinbuchstaben

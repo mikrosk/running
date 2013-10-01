@@ -29,6 +29,6 @@ getChance256
 		data
 
 chance256TabPos	dc.w	0
-chance256Tab	include	"src\tables\chance.s"
+chance256Tab	include	"src/tables/chance.s"
 
 

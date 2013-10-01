@@ -2016,8 +2016,8 @@ fileTangens1024XTab	dc.b	"data\bin\tan1024x.tab",0
 ;		    11: unten_decke (1 = true)
 ;		    12: decke_ist_himmel (1 = true)
 ;		    13: backside ist normale textur (1 = true)
-;		    14:	masked_texture (1 = textur muž maskiert werden)
-;			(z.b. monster, gegner, gitterst„be ...)
+;		    14:	masked_texture (1 = textur muï¿½ maskiert werden)
+;			(z.b. monster, gegner, gitterstï¿½be ...)
 ;		    15: lightshading on/off
 ;		31..16: h2 (0..65536)
 

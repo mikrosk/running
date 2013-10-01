@@ -209,7 +209,7 @@ ssFilename	dc.b	"pic00000.bmp",0
 		even
 
 
-ssBmpHeader	incbin	"include\system\header.bmp"
+ssBmpHeader	incbin	"include/system/header.bmp"
 
 
 		IFEQ LANGUAGE

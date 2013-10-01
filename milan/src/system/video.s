@@ -171,9 +171,9 @@ ssOk
 		bsr	calcVblFactor		
 		bsr	modifyPaintCodeAddresses
 		bsr	laptopCalcScreenOffset
-		bsr	scannerResetFields		; .\src\console\scanner.s
-		bsr	geigerResetFields		; .\src\console\geiger.s
-		bsr	consoleResetFields		; .\src\console\init.s
+		bsr	scannerResetFields		; ./src/console/scanner.s
+		bsr	geigerResetFields		; ./src/console/geiger.s
+		bsr	consoleResetFields		; ./src/console/init.s
 
 		rts
 

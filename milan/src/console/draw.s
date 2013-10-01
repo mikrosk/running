@@ -164,9 +164,9 @@ dcdiOk
 
 		bsr	drawConsoleItemActivationOrTimelimit
 
-		bsr	drawScannerIfRequired			; .\src\console\scanner.s
-		bsr	drawGeigerIfRequired			; .\src\console\geiger.s
-		bsr	drawAltTabIfRequired			; .\src\console\alttab.s
+		bsr	drawScannerIfRequired			; ./src/console/scanner.s
+		bsr	drawGeigerIfRequired			; ./src/console/geiger.s
+		bsr	drawAltTabIfRequired			; ./src/console/alttab.s
 
 		rts
 

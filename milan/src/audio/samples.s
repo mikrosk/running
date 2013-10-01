@@ -172,13 +172,13 @@ sample03	dc.w	%0000000000000010
 
 
 
-sample00Binary	incbin	"include\samples\player\jump.sam"
+sample00Binary	incbin	"include/samples/player/jump.sam"
 sample00BinaryE
-sample01Binary	incbin	"include\samples\player\footer.sam"
+sample01Binary	incbin	"include/samples/player/footer.sam"
 sample01BinaryE
-sample02Binary	incbin	"include\samples\weapon\pistol1.sam"
+sample02Binary	incbin	"include/samples/weapon/pistol1.sam"
 sample02BinaryE
-sample03Binary	incbin	"include\samples\weapon\pistol2.sam"
+sample03Binary	incbin	"include/samples/weapon/pistol2.sam"
 sample03BinaryE
 
 		even
@@ -186,46 +186,46 @@ sample03BinaryE
 
 
 		ifne SAMPLES
-sam_s4          incbin	"samples\misc\open5.sam"
-sam_s5          incbin	"samples\misc\get.sam"
-sam_s6          incbin	"samples\misc\locked.sam"
-sam_s7		incbin	"samples\menu\mnuon.sam"
-sam_s8		incbin	"samples\menu\mnuoff.sam"
-sam_s9		incbin	"samples\menu\mnuclick.sam"
-sam_s10		incbin	"samples\menu\mnuright.sam"
-sam_s11		incbin	"samples\menu\mnuleft.sam"
-sam_s12		incbin	"samples\menu\mnuchoos.sam"
-sam_s13		incbin	"samples\computer\tasta030.sam"
-sam_s14		incbin	"samples\misc\teleporter.sam"
-sam_s15		incbin	"samples\misc\eingeras.sam"
+sam_s4          incbin	"samples/misc/open5.sam"
+sam_s5          incbin	"samples/misc/get.sam"
+sam_s6          incbin	"samples/misc/locked.sam"
+sam_s7		incbin	"samples/menu/mnuon.sam"
+sam_s8		incbin	"samples/menu/mnuoff.sam"
+sam_s9		incbin	"samples/menu/mnuclick.sam"
+sam_s10		incbin	"samples/menu/mnuright.sam"
+sam_s11		incbin	"samples/menu/mnuleft.sam"
+sam_s12		incbin	"samples/menu/mnuchoos.sam"
+sam_s13		incbin	"samples/computer/tasta030.sam"
+sam_s14		incbin	"samples/misc/teleporter.sam"
+sam_s15		incbin	"samples/misc/eingeras.sam"
 sam_s16
 
 ; "Angriff"-Samples
-sam_s20		incbin	"samples\angriff\adrian3.sam"
-sam_s21		incbin	"samples\angriff\diehard.sam"
-sam_s22		incbin	"samples\angriff\hasta.sam"
+sam_s20		incbin	"samples/angriff/adrian3.sam"
+sam_s21		incbin	"samples/angriff/diehard.sam"
+sam_s22		incbin	"samples/angriff/hasta.sam"
 
 ; "Boring"-Samples
-sam_s23		incbin	"samples\boring\asses.sam"
-sam_s24		incbin	"samples\boring\bored.sam"
+sam_s23		incbin	"samples/boring/asses.sam"
+sam_s24		incbin	"samples/boring/bored.sam"
 sam_s25		
 
 ; "Medizin"-Samples
-sam_s28		incbin	"samples\medizin\dope.sam"
-sam_s29		incbin	"samples\medizin\good2.sam"
-sam_s30		incbin	"samples\medizin\like.sam"
+sam_s28		incbin	"samples/medizin/dope.sam"
+sam_s29		incbin	"samples/medizin/good2.sam"
+sam_s30		incbin	"samples/medizin/like.sam"
 
 ; "Waffe"-Samples
-sam_s31		incbin	"samples\waffe\dont.sam"
-sam_s32		incbin	"samples\waffe\nice.sam"
-sam_s33		incbin	"samples\waffe\check2.sam"
+sam_s31		incbin	"samples/waffe/dont.sam"
+sam_s32		incbin	"samples/waffe/nice.sam"
+sam_s33		incbin	"samples/waffe/check2.sam"
 
 ; "Other"-Samples
-sam_s34		incbin	"samples\other\ahh.sam"
-sam_s35		incbin	"samples\other\arghh.sam"
-sam_s36		incbin	"samples\other\cool.sam"
+sam_s34		incbin	"samples/other/ahh.sam"
+sam_s35		incbin	"samples/other/arghh.sam"
+sam_s36		incbin	"samples/other/cool.sam"
 
-sam_s37		incbin	"samples\misc\ubahn.sam"
+sam_s37		incbin	"samples/misc/ubahn.sam"
 sam_s38
 
 sam_end

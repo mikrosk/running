@@ -26,7 +26,7 @@ mtConnectAddr	ds.l	1
 ;* make_laptop
 ;**************************************
 
-		include	"include\codes.s"
+		include	"include/codes.s"
 
 make_laptop
 

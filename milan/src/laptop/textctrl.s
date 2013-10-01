@@ -87,7 +87,7 @@ limslOut
 		bsr	laptopSetCursorLastLine
 		bsr	laptopDrawOffscreen
 
-		bsr	setFlagToClearBackground		; .\gfxrouts\backgrnd.s
+		bsr	setFlagToClearBackground		; ./gfxrouts/backgrnd.s
 
 		rts
 

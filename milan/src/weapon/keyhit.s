@@ -22,7 +22,7 @@ wkhLoop
 		movem.l	d1/a0-a1,-(sp)
 		clr.b	(a1,d0.w)				; tastendruck loeschen
 		move.w	d1,d0
-		bsr	setNewWeapon				; .\src\weapon\setweapn.s
+		bsr	setNewWeapon				; ./src/weapon/setweapn.s
 		movem.l	(sp)+,d1/a0-a1
 wkhNoSelectWeapon
 		dbra	d1,wkhLoop

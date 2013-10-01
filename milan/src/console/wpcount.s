@@ -36,7 +36,7 @@ iwcfLoop	move.w	d1,d2
 ; ---------------------------------------------------------
 ; 11.07.00/vk
 ; zeichnet die angegebene munitionsanzahl in den logischen
-; screen. routine mit gleichem inhalt ist cidsiDrawValue	; .\src\console\items.s
+; screen. routine mit gleichem inhalt ist cidsiDrawValue	; ./src/console/items.s
 ; d0.w = zu zeichnende munitionsanzahl
 ; rettet alle register
 wpcountDrawValue

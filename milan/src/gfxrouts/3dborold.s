@@ -478,21 +478,21 @@ border3dGfx7	dc.l	b3dg7
 		dc.w	0,0,0
 
 
-b3dg0		incbin	"include\3dborder\3dupper.rbf"
+b3dg0		incbin	"include/3dborder/3dupper.rbf"
 		even
-b3dg1		incbin	"include\3dborder\3dlower.rbf"
+b3dg1		incbin	"include/3dborder/3dlower.rbf"
 		even
-b3dg2		incbin	"include\3dborder\3dleft.rbf"
+b3dg2		incbin	"include/3dborder/3dleft.rbf"
 		even
-b3dg3		incbin	"include\3dborder\3dright.rbf"
+b3dg3		incbin	"include/3dborder/3dright.rbf"
 		even
-b3dg4		incbin	"include\3dborder\3duleft.rbf"
+b3dg4		incbin	"include/3dborder/3duleft.rbf"
 		even
-b3dg5		incbin	"include\3dborder\3duright.rbf"
+b3dg5		incbin	"include/3dborder/3duright.rbf"
 		even
-b3dg6		incbin	"include\3dborder\3dlleft.rbf"
+b3dg6		incbin	"include/3dborder/3dlleft.rbf"
 		even
-b3dg7		incbin	"include\3dborder\3dlright.rbf"
+b3dg7		incbin	"include/3dborder/3dlright.rbf"
 		even
 
 

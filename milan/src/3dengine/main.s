@@ -25,9 +25,9 @@ c3pAlgorithm2						; algorithmus mit texturiertem boden und decke
 		bsr	c3pShiftAndRotate
 		;bsr	c3pPlaceThings
 		;bsr	c3pPlaceMonsters
-		bsr	c3pA2MakePartition		; .\src\3dengine\a2.s
+		bsr	c3pA2MakePartition		; ./src/3dengine/a2.s
 		bsr	c3pA2CalcDXYRayIndex
-		bsr	c3pA2SortLines			; .\src\3dengine\a2sort.s
+		bsr	c3pA2SortLines			; ./src/3dengine/a2sort.s
 		bsr	c3pA2Collision
 
 

@@ -426,7 +426,7 @@ border3dMain
 ; ---------------------------------------------------------
 ; definition der umrandung der extra-karte (map)
 border3dExtraMap
-		dc.l	bmpExtraMapUl		; bitmaps in .\src\gfxrouts\bitmpdef.s definiert
+		dc.l	bmpExtraMapUl		; bitmaps in ./src/gfxrouts/bitmpdef.s definiert
 		dc.l	bmpNull
 		dc.l	bmpExtraMapUs
 		dc.l	bmpNull

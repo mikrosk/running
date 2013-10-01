@@ -80,11 +80,11 @@ laptopInputModeControl
 ; laptopanzeige ein- und ausschalten.
 ; a1 = tastaturstatus
 laptopOnOff	clr.b	(a1,d0.w)
-		lea	laptopFlag,a0			; .\ldsvarea.s
+		lea	laptopFlag,a0			; ./ldsvarea.s
 		move.w	(a0),d0
 		beq.s	looSwitchOn
 looSwitchOff	moveq	#0,d0
-		bsr	setFlagToClearBackground	; .\gfxrouts\backgrnd.s
+		bsr	setFlagToClearBackground	; ./gfxrouts/backgrnd.s
 		bra.s	looSwitchOk
 looSwitchOn	moveq	#1,d0
 looSwitchOk	move.w	d0,(a0)

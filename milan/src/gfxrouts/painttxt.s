@@ -82,7 +82,7 @@ ptolIsSpace
 		data
 
 
-fontGfx		incbin	"include\fonts\fn_8x8-2.fnt"		; z. B. fuer meldungen am oberen bildschirmrand
+fontGfx		incbin	"include/fonts/fn_8x8-2.fnt"		; z. B. fuer meldungen am oberen bildschirmrand
 
 
 
@@ -375,10 +375,10 @@ p_space_nm:
 
 menufont_offi	equ	656*2
 
-font		incbin	"fnt\fn_8x8-2.fnt"
-font4x8		incbin	"fnt\fn_4x8-3.fnt"
-font4x5		incbin	"fnt\fn_4x5.fnt"
-menufont	incbin	"tpi\menufont.tpi"
+font		incbin	"fnt/fn_8x8-2.fnt"
+font4x8		incbin	"fnt/fn_4x8-3.fnt"
+font4x5		incbin	"fnt/fn_4x5.fnt"
+menufont	incbin	"tpi/menufont.tpi"
 menufont_end
 
 		endc

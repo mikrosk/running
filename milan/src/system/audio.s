@@ -134,7 +134,7 @@ initAudio
 		lea	ltSoundOk,a0			; meldung ueber erfolgreiche initialisierung ausgeben
 		bsr	logString
 
-		bsr	audioClearBuffers		; .\src\audio\audiosys.s
+		bsr	audioClearBuffers		; ./src/audio/audiosys.s
 		bsr	audioSystemStart
 		bra	iaOut
 
