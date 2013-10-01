@@ -120,7 +120,7 @@ drn_no_hit
 		tst.w	dsp_error_flag
 		beq.s	dsp_data_ok
 
-		bsr	low_detail
+		jsr	low_detail
 
 dsp_data_ok
 

@@ -656,7 +656,7 @@ expand_screen_x:
                 blt.s   expand_x_skip
                 move.w  xwindow_max,D0
 expand_x_skip:  move.w  D0,pd_width(A6)
-                bsr     dsp_s_table
+                jsr     dsp_s_table
                 move.w  #1,clear_it_flag
                 rts
 
@@ -668,7 +668,7 @@ expand_screen_y:
                 blt.s   expand_y_skip
                 move.w  ywindow_max,D0
 expand_y_skip:  move.w  D0,pd_heigth(A6)
-                bsr     dsp_s_table
+                jsr     dsp_s_table
                 move.w  #1,clear_it_flag
 expand_y_out:   rts
 

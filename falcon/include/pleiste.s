@@ -637,7 +637,7 @@ pls_monst_loop:
                 cmpi.w  #25,D2
                 bgt	pls_xy_out
                 cmpi.w  #-25,D2
-                blt.s   pls_xy_out
+                blt     pls_xy_out
 
                 cmpi.w  #25,D3
                 bgt.s   pls_xy_out
@@ -1202,7 +1202,7 @@ pl_small_ammo
 	; hintergrundkaestchen ...
 
 		movea.l	screen_1(pc),a2
-		bsr.s	plsa_get_screen_offset
+		bsr	plsa_get_screen_offset
 		adda.l	d0,a2
 		subq.l	#2*2,a2			; und 
 		move.w	true_offi+2,d0		; etwas

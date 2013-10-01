@@ -255,7 +255,7 @@ songplay	lea variable,a6
 	subq.w #1,d6
 	clr.l spl_offset2(a1)
 	mulu #end_inst,d6
-	move.l (tab_adr_blk.l,[a2,d6.w]),adr_instr(a1)	;Adresse instr
+	move.l ([tab_adr_blk.l,a2,d6.w]),adr_instr(a1)	;Adresse instr
 	move.l len_inst(a2,d6.w),len_instr(a1)	;len instr
 	move.b fine_inst(a2,d6.w),fine_tune(a1)	;Volume instr
 	move.l frq_inst(a2,d6.w),freq_inst(a1)
