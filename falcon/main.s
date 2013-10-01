@@ -72,8 +72,8 @@ mx_sample_len	equ	215000
 mx_intsam_len	equ	248140
 ;---------------------------------------
 
-		include	"include\const_02.s"
-		include	"include\con_pist.s"
+		include	"include/const_02.s"
+		include	"include/con_pist.s"
 
 ;**************************************
 ;**************************************
@@ -677,28 +677,28 @@ qs_no_30
 ;* levelend_screen
 ;**************************************
 
-		include	"include\levelend.s"
+		include	"include/levelend.s"
 
 
 ;**************************************
 ;* registry
 ;**************************************
 
-		include	"include\registry.s"
+		include	"include/registry.s"
 
 
 ;**************************************
 ;* init_point
 ;**************************************
 
-		include	"include\initpnt.s"
+		include	"include/initpnt.s"
 
 
 ;**************************************
 ;* animate_shoot
 ;**************************************
 
-		include	"include\shotanim.s"
+		include	"include/shotanim.s"
 
 
 ;**************************************
@@ -707,7 +707,7 @@ qs_no_30
 
 mainmenue_start
 		ifne menueflag
-		include	"include\menu\menuv6.txt"
+		include	"include/menu/menuv6.txt"
 		endc
 mainmenue_end
 
@@ -790,28 +790,28 @@ mm_save_options
 ;* dma player
 ;**************************************
 
-		include	"include\dma_v307.s"
+		include	"include/dma_v307.s"
 
 
 ;**************************************
 ;* menue
 ;**************************************
 
-		include	"include\menue.s"
+		include	"include/menue.s"
 
 
 ;**************************************
 ;* help_screen
 ;**************************************
 
-		include	"include\help.s"
+		include	"include/help.s"
 
 
 ;**************************************
 ;* being_bored
 ;**************************************
 
-		include	"include\bored.s"
+		include	"include/bored.s"
 
 
 ;**************************************
@@ -836,7 +836,7 @@ aa_out
 ;* paint_pistol                       *
 ;**************************************
 
-		include	"include\ppistol.s"
+		include	"include/ppistol.s"
 
 
 ;--------------------------------------
@@ -1705,21 +1705,21 @@ fvm_out:
 ;* animate_monster
 ;**************************************
 
-		include	"include\anim_mo2.s"
+		include	"include/anim_mo2.s"
 
 
 ;**************************************
 ;* animate_trains
 ;**************************************
 
-		include	"include\anim_trn.s"
+		include	"include/anim_trn.s"
 
 
 ;**************************************
 ;* animate_doors / animate_lifts
 ;**************************************
 
-		include	"include\anim_doo.s"
+		include	"include/anim_doo.s"
 
 
 ;**************************************
@@ -2104,28 +2104,28 @@ dsp_too_lame:   DC.W 0
 ;* paint_deci / paint_hex
 ;**************************************
 
-		include	"include\deci_hex.s"
+		include	"include/deci_hex.s"
 
 
 ;**************************************
 ;* test_action_fld
 ;**************************************
 
-		include	"include\t_field.s"
+		include	"include/t_field.s"
 
 
 ;**************************************
 ;* move_it
 ;**************************************
 
-		include	"include\move_it.s"
+		include	"include/move_it.s"
 
 
 ;**************************************
 ;* test_position
 ;**************************************
 
-		include	"include\test_pos.s"
+		include	"include/test_pos.s"
 
 
 ;**************************************
@@ -2184,7 +2184,7 @@ no_speaker_plus:
 ;* action_keys
 ;**************************************
 
-		include	"include\act_keys.s"
+		include	"include/act_keys.s"
 
 
 
@@ -2193,7 +2193,7 @@ no_speaker_plus:
 ;* key_hit
 ;**************************************
 
-		include	"include\key_hit2.s"
+		include	"include/key_hit2.s"
 
 
 ;**************************************
@@ -2311,7 +2311,7 @@ copy_p2l_loop2: move.l  (A0)+,(A1)+
 ;* gfx_routs
 ;**************************************
 
-		include	"include\gfxrouts.s"
+		include	"include/gfxrouts.s"
 
 
 ;**************************************
@@ -3053,7 +3053,7 @@ cb2l_loop512
 ;* routinen zum ein- und ausblenden
 ;**************************************
 
-		include	"include\blenden.s"
+		include	"include/blenden.s"
 
 
 ;**************************************
@@ -3576,7 +3576,7 @@ karte_player_point:
 ;* install_level & install_game
 ;**************************************
 
-		include	"include\install.s"
+		include	"include/install.s"
 	
 
 ;**************************************
@@ -3943,9 +3943,9 @@ paint_all
 
 ;---------------
 
-		include	"include\paint640.s"
-		include	"include\paint512.s"
-		include	"include\paint320.s"
+		include	"include/paint640.s"
+		include	"include/paint512.s"
+		include	"include/paint320.s"
 
 ;---------------
 
@@ -4038,14 +4038,14 @@ pc_out
 ;* paint_leiste
 ;**************************************
 
-		include	"include\pleiste.s"
+		include	"include/pleiste.s"
 
 
 ;**************************************
 ;* inclevel
 ;**************************************
 
-		include	"include\inclevel.s"
+		include	"include/inclevel.s"
 
 
 ;**************************************
@@ -4288,7 +4288,7 @@ mt180t_out
 ;* make_laptop
 ;**************************************
 
-		include	"include\laptop.s"
+		include	"include/laptop.s"
 
 
 ;**************************************
@@ -6796,14 +6796,14 @@ grey_loop2:     move.l  (A1)+,(A0)+
 ;* dsp kommunikationsroutinen
 ;**************************************
 
-		include	"include\dsp_comm.s"
+		include	"include/dsp_comm.s"
 
 
 ;**************************************
 ;* init routines ...
 ;**************************************
 
-		include	"include\init.s"
+		include	"include/init.s"
                 
 
 
@@ -7010,7 +7010,7 @@ dummy_vbl
 ;**************************************
 
 jagpad_routs
-		incbin	"include\jagpad.inc"
+		incbin	"include/jagpad.inc"
 		even
 
 ;--------------------------------------
@@ -7167,7 +7167,7 @@ jps_no_clear
 
 ;---------------
 
-		include	"include\episread.s"
+		include	"include/episread.s"
 
 ;---------------
 
@@ -7520,16 +7520,16 @@ dsp_calc_l_ii_anz:
 ;**************************************
 
 		ifne menueflag
-		include	"include\menu\fire.dat"
-		include	"include\menu\gouraud.dat"
-		include	"include\menu\texture.dat"
+		include	"include/menu/fire.dat"
+		include	"include/menu/gouraud.dat"
+		include	"include/menu/texture.dat"
 		endc
 
 ;**************************************
 ;* tables
 ;**************************************
 
-		include	"include\tables.s"
+		include	"include/tables.s"
 
 
 ;**************************************
@@ -8781,10 +8781,10 @@ civilian_staerke_tab
 ;* grafix
 ;**************************************
 
-things_gfx:     incbin 	"tpi\things.tpi"
-leiste_gfx:     incbin	"tpi\console.tpi"
+things_gfx:     incbin 	"tpi/things.tpi"
+leiste_gfx:     incbin	"tpi/console.tpi"
 
-kartback_pic:   incbin	"tpi\back_002.tpi"
+kartback_pic:   incbin	"tpi/back_002.tpi"
 
  
 ;**************************************
@@ -8793,10 +8793,10 @@ kartback_pic:   incbin	"tpi\back_002.tpi"
 
 menufont_offi	equ	656*2
 
-font		incbin	"fnt\fn_8x8-2.fnt"
-font4x8		incbin	"fnt\fn_4x8-3.fnt"
-font4x5		incbin	"fnt\fn_4x5.fnt"
-menufont	incbin	"tpi\menufont.tpi"
+font		incbin	"fnt/fn_8x8-2.fnt"
+font4x8		incbin	"fnt/fn_4x8-3.fnt"
+font4x5		incbin	"fnt/fn_4x5.fnt"
+menufont	incbin	"tpi/menufont.tpi"
 menufont_end
 
 mm_options_file	dc.b	"running.inf",0
@@ -8894,50 +8894,50 @@ samples
 
 		dc.l	sam_s37,sam_s38-sam_s37,19	; ubahn
 
-sam_s0          incbin	"samples\player\jump.sam"
-sam_s1          incbin	"samples\player\footer.sam"
-sam_s2          incbin	"samples\player\pistol1.sam"
-sam_s3          incbin	"samples\player\pistol2.sam"
-sam_s4          incbin	"samples\misc\open5.sam"
-sam_s5          incbin	"samples\misc\get.sam"
-sam_s6          incbin	"samples\misc\locked.sam"
-sam_s7		incbin	"samples\menu\mnuon.sam"
-sam_s8		incbin	"samples\menu\mnuoff.sam"
-sam_s9		incbin	"samples\menu\mnuclick.sam"
-sam_s10		incbin	"samples\menu\mnuright.sam"
-sam_s11		incbin	"samples\menu\mnuleft.sam"
-sam_s12		incbin	"samples\menu\mnuchoos.sam"
-sam_s13		incbin	"samples\computer\tasta030.sam"
-sam_s14		incbin	"samples\misc\teleporter.sam"
-sam_s15		incbin	"samples\misc\eingeras.sam"
+sam_s0          incbin	"samples/player/jump.sam"
+sam_s1          incbin	"samples/player/footer.sam"
+sam_s2          incbin	"samples/player/pistol1.sam"
+sam_s3          incbin	"samples/player/pistol2.sam"
+sam_s4          incbin	"samples/misc/open5.sam"
+sam_s5          incbin	"samples/misc/get.sam"
+sam_s6          incbin	"samples/misc/locked.sam"
+sam_s7		incbin	"samples/menu/mnuon.sam"
+sam_s8		incbin	"samples/menu/mnuoff.sam"
+sam_s9		incbin	"samples/menu/mnuclick.sam"
+sam_s10		incbin	"samples/menu/mnuright.sam"
+sam_s11		incbin	"samples/menu/mnuleft.sam"
+sam_s12		incbin	"samples/menu/mnuchoos.sam"
+sam_s13		incbin	"samples/computer/tasta030.sam"
+sam_s14		incbin	"samples/misc/teleporter.sam"
+sam_s15		incbin	"samples/misc/eingeras.sam"
 sam_s16
 
 ; "Angriff"-Samples
-sam_s20		incbin	"samples\angriff\adrian3.sam"
-sam_s21		incbin	"samples\angriff\diehard.sam"
-sam_s22		incbin	"samples\angriff\hasta.sam"
+sam_s20		incbin	"samples/angriff/adrian3.sam"
+sam_s21		incbin	"samples/angriff/diehard.sam"
+sam_s22		incbin	"samples/angriff/hasta.sam"
 
 ; "Boring"-Samples
-sam_s23		incbin	"samples\boring\asses.sam"
-sam_s24		incbin	"samples\boring\bored.sam"
+sam_s23		incbin	"samples/boring/asses.sam"
+sam_s24		incbin	"samples/boring/bored.sam"
 sam_s25		
 
 ; "Medizin"-Samples
-sam_s28		incbin	"samples\medizin\dope.sam"
-sam_s29		incbin	"samples\medizin\good2.sam"
-sam_s30		incbin	"samples\medizin\like.sam"
+sam_s28		incbin	"samples/medizin/dope.sam"
+sam_s29		incbin	"samples/medizin/good2.sam"
+sam_s30		incbin	"samples/medizin/like.sam"
 
 ; "Waffe"-Samples
-sam_s31		incbin	"samples\waffe\dont.sam"
-sam_s32		incbin	"samples\waffe\nice.sam"
-sam_s33		incbin	"samples\waffe\check2.sam"
+sam_s31		incbin	"samples/waffe/dont.sam"
+sam_s32		incbin	"samples/waffe/nice.sam"
+sam_s33		incbin	"samples/waffe/check2.sam"
 
 ; "Other"-Samples
-sam_s34		incbin	"samples\other\ahh.sam"
-sam_s35		incbin	"samples\other\arghh.sam"
-sam_s36		incbin	"samples\other\cool.sam"
+sam_s34		incbin	"samples/other/ahh.sam"
+sam_s35		incbin	"samples/other/arghh.sam"
+sam_s36		incbin	"samples/other/cool.sam"
 
-sam_s37		incbin	"samples\misc\ubahn.sam"
+sam_s37		incbin	"samples/misc/ubahn.sam"
 sam_s38
 
 sam_end
@@ -9010,7 +9010,7 @@ registry_file	dc.b	"registry.inf",0
 
 ;---------------
 
-		include "include\ueber1.s"
+		include "include/ueber1.s"
 
 
 ;**************************************
@@ -9303,9 +9303,9 @@ video_data	ds.b	34
 ;---------------
 
 zufall_256_tab	
-		include	"include\zuf256.s"
+		include	"include/zuf256.s"
 
-		include	"include\levfiles.s"
+		include	"include/levfiles.s"
 
 
 
@@ -9471,12 +9471,12 @@ lev_samples	ds.l	3*128
 dith_data			
 		ifne menueflag
 
-		include	"include\menu\fire.bss"
-		include	"include\menu\gouraud.bss"
-		include	"include\menu\texture.bss"
-		include	"include\menu\data.bss"
+		include	"include/menu/fire.bss"
+		include	"include/menu/gouraud.bss"
+		include	"include/menu/texture.bss"
+		include	"include/menu/data.bss"
 
-		include	"include\menu\parts\player.bss"
+		include	"include/menu/parts/player.bss"
 
 		endc
 

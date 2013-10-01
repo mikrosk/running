@@ -243,10 +243,10 @@ songplay	lea variable,a6
 	move.w nb_voie,d7
 .next_track	move.l (a0)+,ligne(a1)		;Note pattern
 	***Prend l'instrument
-	tst.l stereo_put?
+	tst.l stereo_put
 	beq.s .no_st_put
-	move.l stereo_put?,ligne(a1)
-	clr.l stereo_put?
+	move.l stereo_put,ligne(a1)
+	clr.l stereo_put
 .no_st_put	bfextu ligne(a1){14:6},d6	;No Instrument
 	moveq #0,d5
 	move.b ligne(a1),d5
@@ -265,7 +265,7 @@ songplay	lea variable,a6
 	beq.s .no_st
 	btst #0,d7
 	beq.s .set_r
-	move.l ligne(a1),stereo_put?
+	move.l ligne(a1),stereo_put
 	bclr #7,typ_inst(a1)	;Left
 	bra.s .no_st
 .set_r	bset #7,typ_inst(a1)	;Right
@@ -1590,7 +1590,7 @@ _thefreq	dc.w	512,3,3
 decalage	dc.l	$008000
 offset_voie	dc.l	0
 nb_voie_max	dc.w	7
-stereo_put?	dc.l	0
+stereo_put	dc.l	0
 memoire		dcb.l	9*2
 
 ;---------------
@@ -1598,7 +1598,7 @@ memoire		dcb.l	9*2
 		ifne menuedata_load
 
 Tempo_tab	
-		incbin	"include\menu\tempo.tab"
+		incbin	"include/menu/tempo.tab"
 
 		dc.w 0,0,0
 

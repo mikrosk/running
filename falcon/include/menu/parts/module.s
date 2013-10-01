@@ -65,13 +65,13 @@ FIN
 
 ;---------------
 
-		include	"include\menu\parts\load_dtm.s"
+		include	"include/menu/parts/load_dtm.s"
 
 ;--------------------------------------
 
 		ifne menuedata_load
 
-dsp_buff	incbin	"data\menudata\digidsp2.out"
+dsp_buff	incbin	"data/menudata/digidsp2.out"
 dsp_buff_end
 		endc
 

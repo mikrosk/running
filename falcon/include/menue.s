@@ -311,8 +311,8 @@ mn_init_routs	dc.l	0	; pointer auf menue_init_routs
 mn_info		dc.l	0	; pointer auf menue_info
 
 
-		include	"include\mnuplay.s"
-		include	"include\mnustart.s"
+		include	"include/mnuplay.s"
+		include	"include/mnustart.s"
 
 
 ;**************************************

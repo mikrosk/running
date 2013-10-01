@@ -173,7 +173,7 @@ no_MODULEstop2	move.l	old_menu_vbl,$70.w
 
 ********** Sub Menu Control *******
 
-		include	"include\menu\parts\menucon.s"
+		include	"include/menu/parts/menucon.s"
 
 ************ VBLs ************
 
@@ -293,7 +293,7 @@ vbl_delay	dc.w	0
 
 ****** kugel steuerung ******
 
-		include	"include\menu\parts\put.s"
+		include	"include/menu/parts/put.s"
 
 ************ SUBS *****************
 
@@ -343,29 +343,29 @@ gfx:	move.l	(a2)+,d1
 
 ******* Loading *******
 
-	include	"include\menu\parts\loading.s"
+	include	"include/menu/parts/loading.s"
 
 ******** Fading ***********
 
-	include	"include\menu\parts\fade.s"
+	include	"include/menu/parts/fade.s"
 
 ******* Kugel **********
 
-	include	"include\menu\parts\kugel.s"
+	include	"include/menu/parts/kugel.s"
 
 ******** fire ********
 
-	include	"include\menu\parts\fire.s"
+	include	"include/menu/parts/fire.s"
 
-	include	"include\menu\parts\random.s"
+	include	"include/menu/parts/random.s"
                 
 ******* shading  *********
 
-	include	"include\menu\parts\gouraud.s"
+	include	"include/menu/parts/gouraud.s"
 
 ******* texture mapping  *********
 
-	include	"include\menu\parts\texture.s"
+	include	"include/menu/parts/texture.s"
 
 ************ DATA LOADING SPECS ***********
 
@@ -430,7 +430,7 @@ FILEtempo_tab	dc.b	"data\menudata\tempo.tab",0
 
 ************ DTM Player ***************
 
-		include	"include\menu\parts\module.s"
+		include	"include/menu/parts/module.s"
 
 ********************************************
 

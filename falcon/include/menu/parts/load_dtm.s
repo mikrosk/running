@@ -336,7 +336,7 @@ Read_chunkdait
 
 ;---------------
 
-		include "include\menu\parts\player.s"
+		include "include/menu/parts/player.s"
 
 ;--------------------------------------
 
