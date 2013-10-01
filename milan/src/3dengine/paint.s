@@ -419,14 +419,14 @@ p3prScan
 		beq.s	p3prSkip00
 p3pModRD00	move.w	(a5,d7.w*2),d7		; zielfarbwert
 p3pModRD01	move.w	(a2),d6			; quellfarbwert
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD02	lsr.w	#1,d6
 p3pModRD03	lsr.w	#1,d7
 p3pModRD04	and.w	d3,d6
 p3pModRD05	and.w	d3,d7
 p3pModRD06	add.w	d6,d7
 p3pModRD07	move.w	d7,(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip00	addx.l	d4,d5
 
 		move.w	(a4,d5.w*2),d7		; farbindex (aus tilesGfx)
@@ -434,7 +434,7 @@ p3prSkip00	addx.l	d4,d5
 p3pModRD08	move.w	(a5,d7.w*2),d7		; zielfarbwert
 p3pModR00
 p3pModRD09	move.w	-1280(a2),d6		; quellfarbwert
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD10	lsr.w	#1,d6
 p3pModRD11	lsr.w	#1,d7
 p3pModRD12	and.w	d3,d6
@@ -442,7 +442,7 @@ p3pModRD13	and.w	d3,d7
 p3pModRD14	add.w	d6,d7
 p3pModR01
 p3pModRD15	move.w	d7,-1280(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip01	addx.l	d4,d5
 
 		move.w	(a4,d5.w*2),d7		; farbindex (aus tilesGfx)
@@ -450,7 +450,7 @@ p3prSkip01	addx.l	d4,d5
 p3pModRD16	move.w	(a5,d7.w*2),d7		; zielfarbwert
 p3pModR02
 p3pModRD17	move.w	-1280*2(a2),d6		; quellfarbwert
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD18	lsr.w	#1,d6
 p3pModRD19	lsr.w	#1,d7
 p3pModRD20	and.w	d3,d6
@@ -458,7 +458,7 @@ p3pModRD21	and.w	d3,d7
 p3pModRD22	add.w	d6,d7
 p3pModR03
 p3pModRD23	move.w	d7,-1280*2(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip02	addx.l	d4,d5
 
 		move.w	(a4,d5.w*2),d7		; farbindex (aus tilesGfx)
@@ -466,7 +466,7 @@ p3prSkip02	addx.l	d4,d5
 p3pModRD24	move.w	(a5,d7.w*2),d7		; zielfarbwert
 p3pModR04
 p3pModRD25	move.w	-1280*3(a2),d6		; quellfarbwert
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD26	lsr.w	#1,d6
 p3pModRD27	lsr.w	#1,d7
 p3pModRD28	and.w	d3,d6
@@ -474,7 +474,7 @@ p3pModRD29	and.w	d3,d7
 p3pModRD30	add.w	d6,d7
 p3pModR05
 p3pModRD31	move.w	d7,-1280*3(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip03	addx.l	d4,d5
 
 		move.w	(a4,d5.w*2),d7		; farbindex (aus tilesGfx)
@@ -482,7 +482,7 @@ p3prSkip03	addx.l	d4,d5
 p3pModRD32	move.w	(a5,d7.w*2),d7		; zielfarbwert
 p3pModR06
 p3pModRD33	move.w	-1280*4(a2),d6		; quellfarbwert
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD34	lsr.w	#1,d6
 p3pModRD35	lsr.w	#1,d7
 p3pModRD36	and.w	d3,d6
@@ -490,7 +490,7 @@ p3pModRD37	and.w	d3,d7
 p3pModRD38	add.w	d6,d7
 p3pModR07
 p3pModRD39	move.w	d7,-1280*4(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip04	addx.l	d4,d5
 
 		move.w	(a4,d5.w*2),d7		; farbindex (aus tilesGfx)
@@ -498,7 +498,7 @@ p3prSkip04	addx.l	d4,d5
 p3pModRD40	move.w	(a5,d7.w*2),d7		; zielfarbwert
 p3pModR08
 p3pModRD41	move.w	-1280*5(a2),d6		; quellfarbwert
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD42	lsr.w	#1,d6
 p3pModRD43	lsr.w	#1,d7
 p3pModRD44	and.w	d3,d6
@@ -506,7 +506,7 @@ p3pModRD45	and.w	d3,d7
 p3pModRD46	add.w	d6,d7
 p3pModR09
 p3pModRD47	move.w	d7,-1280*5(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip05	addx.l	d4,d5
 
 		move.w	(a4,d5.w*2),d7		; farbindex (aus tilesGfx)
@@ -514,7 +514,7 @@ p3prSkip05	addx.l	d4,d5
 p3pModRD48	move.w	(a5,d7.w*2),d7		; zielfarbwert
 p3pModR10
 p3pModRD49	move.w	-1280*6(a2),d6		; quellfarbwert
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD50	lsr.w	#1,d6
 p3pModRD51	lsr.w	#1,d7
 p3pModRD52	and.w	d3,d6
@@ -522,7 +522,7 @@ p3pModRD53	and.w	d3,d7
 p3pModRD54	add.w	d6,d7
 p3pModR11
 p3pModRD55	move.w	d7,-1280*6(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip06	addx.l	d4,d5
 
 		move.w	(a4,d5.w*2),d7		; farbindex (aus tilesGfx)
@@ -530,7 +530,7 @@ p3prSkip06	addx.l	d4,d5
 p3pModRD56	move.w	(a5,d7.w*2),d7		; zielfarbwert
 p3pModR12
 p3pModRD57	move.w	-1280*7(a2),d6		; quellfarbwert
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD58	lsr.w	#1,d6
 p3pModRD59	lsr.w	#1,d7
 p3pModRD60	and.w	d3,d6
@@ -538,7 +538,7 @@ p3pModRD61	and.w	d3,d7
 p3pModRD62	add.w	d6,d7
 p3pModR13
 p3pModRD63	move.w	d7,-1280*7(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip07	addx.l	d4,d5
 
 p3pModR14	lea	-1280*8(a2),a2
@@ -551,14 +551,14 @@ p3prScanRest
 		beq.s	p3prSkip08
 p3pModRD64	move.w	(a5,d7.w*2),d7
 p3pModRD65	move.w	(a2),d6
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD66	lsr.w	#1,d6
 p3pModRD67	lsr.w	#1,d7
 p3pModRD68	and.w	d3,d6
 p3pModRD69	and.w	d3,d7
 p3pModRD70	add.w	d6,d7
 p3pModRD71	move.w	d7,(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip08	addx.l	d4,d5
 p3pModR15	lea	-1280(a2),a2
 		dbra	d1,p3prScanRest
@@ -574,14 +574,14 @@ p3prNoLoop
 		beq.s	p3prSkip09
 p3pModRD72	move.w	(a5,d7.w*2),d7
 p3pModRD73	move.w	(a2),d6
-		move.b	ccr,-(sp)
+		move	ccr,-(sp)
 p3pModRD74	lsr.w	#1,d6
 p3pModRD75	lsr.w	#1,d7
 p3pModRD76	and.w	d3,d6
 p3pModRD77	and.w	d3,d7
 p3pModRD78	add.w	d6,d7
 p3pModRD79	move.w	d7,(a2)
-		move.b	(sp)+,ccr
+		move	(sp)+,ccr
 p3prSkip09	addx.l	d4,d5
 p3pModR16	lea	-1280(a2),a2
 		dbra	d1,p3prNoLoop

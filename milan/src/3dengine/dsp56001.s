@@ -606,7 +606,7 @@ c3pmpnPartition3
 		move.l	(a2)+,d3
 		move.l	d3,(a4)+
 		move.l	d3,(a5)+
-		moveq.w	#1,d3
+		moveq	#1,d3
 		add.w	d3,d0
 		add.w	d3,d1
 		bra.s	c3pmpnLineOk

@@ -25,7 +25,7 @@ time2ascii
 		move.w	d0,d1
 		rol.w	#5,d1
 		andi.l	#%00011111,d1
-		moveq.w	#10,d4
+		moveq	#10,d4
 		divu.w	d4,d1
 		move.w	#$30,d2
 		add.w	d2,d1
@@ -87,7 +87,7 @@ date2ascii
 
 		move.w	d0,d1
 		andi.l	#%00011111,d1
-		moveq.w	#10,d4
+		moveq	#10,d4
 		divu.w	d4,d1
 		move.w	#$30,d2
 		add.w	d2,d1
